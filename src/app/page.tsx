@@ -1,9 +1,11 @@
-import { Button } from "@/shared/ui/button";
+import { CreateTemplateForm } from "@/features/templates-list/pub/create-template-form";
+import { TemplatesList } from "@/features/templates-list/pub/templates-list";
 
-export default function Home() {
+export default async function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<Button>123</Button>
+		<main className="flex min-h-screen flex-col p-12">
+			<CreateTemplateForm revalidatePagePath="/" />
+			<TemplatesList revalidatePagePath="/" />
 		</main>
 	);
 }
