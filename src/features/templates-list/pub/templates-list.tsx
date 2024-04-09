@@ -1,6 +1,6 @@
 import { revalidatePath } from "next/cache";
 import { templatesRepository } from "../templates.repository";
-import { TemplateItem } from "../ui/templates-item";
+import { TemplateItem } from "../ui/template-item";
 
 export async function TemplatesList({
 	revalidatePagePath
