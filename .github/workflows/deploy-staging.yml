@@ -29,8 +29,8 @@ jobs:
       - name: SSH Command
         uses: D3rHase/ssh-command-action@v0.2.2
         with:
-          host: ${{ secrets.STAGING.SSH_HOST }}
-          user: ${{ secrets.STAGING.SSH_USERNAME }}
-          private_key: ${{ secrets.STAGING.SSH_PRIVATE_KEY }}
-          host_fingerprint: ${{ secrets.STAGING.SSH_FINGERPRINT }}
-          command: source ~/.nvm/nvm.sh; ~/deploy.sh
+          host: ${{ secrets.STAGING_SSH_HOST }}
+          user: ${{ secrets.STAGING_SSH_USERNAME }}
+          private_key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
+          host_fingerprint: ${{ secrets.STAGING_SSH_FINGERPRINT }}
+          command: source ~/.nvm/nvm.sh; echo 'Hello world'
